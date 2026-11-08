@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carátula - Práctica guiada | UPRIT</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #18314b;
+      background: #f2f4f7;
+    }
+    .caratula {
+      width: 100%;
+      max-width: 760px;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 32px rgba(31, 42, 59, 0.12);
+      text-align: center;
+    }
+    .franja { background: #a50f35; height: 12px; }
+    .contenido { padding: 32px 42px 36px; }
+    .logo {
+      display: block;
+      width: min(100%, 360px);
+      height: auto;
+      max-height: 155px;
+      object-fit: contain;
+      margin: 0 auto 16px;
+    }
+    .universidad {
+      color: #a50f35;
+      font-size: clamp(21px, 4vw, 27px);
+      margin: 8px 0 10px;
+      font-weight: 700;
+    }
+    .subtitulo {
+      margin: 0;
+      font-size: 15px;
+      color: #526579;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .linea {
+      width: 88px;
+      height: 4px;
+      background: #a50f35;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+    h1 { font-size: clamp(23px, 4.5vw, 30px); margin: 0 0 9px; line-height: 1.25; }
+    .tema { font-size: 17px; margin: 0 0 24px; color: #526579; }
+    .integrantes {
+      background: #f6f7f9;
+      padding: 22px 25px;
+      border-radius: 12px;
+      text-align: left;
+      margin: 0 auto 28px;
+      max-width: 540px;
+    }
+    .integrantes h2 {
+      margin: 0 0 14px;
+      color: #a50f35;
+      font-size: 19px;
+    }
+    .integrantes ul { list-style: none; margin: 0; padding: 0; }
+    .integrantes li { padding: 7px 0; line-height: 1.4; font-size: 16px; }
+    .boton {
+      display: inline-block;
+      background: #a50f35;
+      color: white;
+      border-radius: 9px;
+      padding: 15px 27px;
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color .15s ease, transform .15s ease;
+    }
+    .boton:hover, .boton:focus-visible { background: #850a2a; transform: translateY(-1px); }
+    .pie { margin: 24px 0 0; color: #66768a; font-size: 14px; }
+    @media (max-width: 520px) {
+      .contenido { padding: 24px 18px 30px; }
+      .integrantes { padding: 20px 17px; }
+      .integrantes li { font-size: 15px; }
+      .boton { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="caratula">
+    <div class="franja"></div>
+    <div class="contenido">
+      <img class="logo"
+           src="https://portalapi.tuni.pe/api/imagen?img=090%5CLOGO%5C090_Univ+priv+Trujillo.png"
+           alt="Logo de la Universidad Privada de Trujillo">
+      <p class="universidad">UNIVERSIDAD PRIVADA DE TRUJILLO</p>
+      <p class="subtitulo">Trabajo práctico de desarrollo web</p>
+      <div class="linea"></div>
+      <h1>PRÁCTICA GUIADA</h1>
+      <p class="tema">Formularios con CSS y tabla HTML</p>
+      <section class="integrantes" aria-labelledby="titulo-integrantes">
+        <h2 id="titulo-integrantes">INTEGRANTES</h2>
+        <ul>
+          <li>Andonaire Sisniegas, Grecia del Boca.</li>
+          <li>Concepción Raico, Wildor Alfredo.</li>
+          <li>Pariona Huarcaya, Donato.</li>
+          <li>Ricra Taipe, Hugo.</li>
+          <li>Sáenz Arango, Yessenia.</li>
+          <li>Yaulilahua Marcañaupa, Cristóbal.</li>
+        </ul>
+      </section>
+      <a class="boton" href="practica_guiada.html">INGRESAR A LA PRÁCTICA →</a>
+      <p class="pie">Trujillo - Perú | 2026</p>
+    </div>
+  </main>
+</body>
+</html>

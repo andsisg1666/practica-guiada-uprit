@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Pedido</title>
+    <link rel="stylesheet" href="estilos.css">
+	
+	<style>
+.contenedor{
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#b5fbca;
+    padding:1em;
+}
+
+.contenedor-logo{
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h1{
+    text-align:center;
+    padding:20px;
+    background-color:#e6af2b;
+}
+
+h2{
+    text-align:center;
+}
+
+.cuadro-azul{
+    float:left;
+    width:45%;
+    height:220px;
+    background-color:#a2cff0;
+    border:1px solid #000;
+    padding:10px;
+    margin:10px;
+}
+
+.cuadro-azul table{
+    width:100%;
+    border-spacing:20px;
+}
+
+.dato{
+    width:100%;
+    background-color:#a2cff0;
+    border-radius:5px;
+}
+
+.contenedor-enviar{
+    text-align:center;
+}
+
+.contenedor-enviar input{
+    font-size:1.2em;
+    padding:10px;
+    border-radius:5px;
+}
+
+.pie{
+    text-align:center;
+    padding:20px;
+    background-color:#e6af2b;
+    margin-top:20px;
+}
+
+
+
+.galeria{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.galeria img{
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
+}
+	</style>
+</head>
+<body>
+
+<div class="contenedor">
+
+    <div class="contenedor-logo">
+        <img src="https://uprit.edu.pe/web/imagenes/logo_uprit_light.svg" width="200" height="200">
+    </div>
+
+    <h1>FORMULARIO DE CAPTURA DE DATOS</h1>
+    <h2>NUEVO PEDIDO</h2>
+
+    <form>
+
+        <div class="cuadro-azul">
+            <table>
+                <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" name="nombre" class="dato"></td>
+                </tr>
+
+                <tr>
+                    <td>Apellidos:</td>
+                    <td><input type="text" name="apellidos" class="dato"></td>
+                </tr>
+
+                <tr>
+                    <td>Dirección:</td>
+                    <td><input type="text" name="direccion" class="dato"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="cuadro-azul">
+            <p>Número de tarjeta de crédito</p>
+
+            <p>
+                <input type="text" name="tarjeta" class="dato">
+            </p>
+
+            <p><input type="radio" name="banco"> Banamex</p>
+            <p><input type="radio" name="banco"> Banorte</p>
+            <p><input type="radio" name="banco"> HSBC</p>
+            <p><input type="radio" name="banco"> Banco Azteca</p>
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <div class="contenedor-enviar">
+            <input type="submit" value="Realizar pedido">
+        </div>
+
+    </form>
+
+    <div class="pie">
+        <p>Copyright 2026 - Derechos Reservados</p>
+        <p>Programador: Tu Nombre</p>
+    </div>
+
+</div>
+
+<!--Galeria de Imagenes  -->
+<hr>
+<h2>Galería de Flores</h2>
+
+<div class="galeria">
+
+    <a href="https://cdn.pixabay.com/photo/2012/12/19/18/13/flowers-70970_1280.jpg" target="_blank">
+        <img src="https://cdn.pixabay.com/photo/2012/12/19/18/13/flowers-70970_1280.jpg" width="150" height="100">
+    </a>
+
+    <a href="https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg?cs=srgb&dl=pexels-pixabay-69776.jpg&fm=jpg" target="_blank">
+        <img src="https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg?cs=srgb&dl=pexels-pixabay-69776.jpg&fm=jpg" width="150" height="100">
+    </a>
+
+    <a href="https://th.bing.com/th/id/R.7cadbff16d1088216e5b2b9dcfffb8fb?rik=Ig5VSTc8%2bkl0ug&riu=http%3a%2f%2fwww.florespedia.com%2fImagenes%2fflores-bonitas-girasoles.jpg&ehk=Uoj8qSOoWr38NnXnpXR6yV%2bqd5zAoPKfdBNJQlJ7DZo%3d&risl=&pid=ImgRaw&r=0" target="_blank">
+        <img src="https://th.bing.com/th/id/R.7cadbff16d1088216e5b2b9dcfffb8fb?rik=Ig5VSTc8%2bkl0ug&riu=http%3a%2f%2fwww.florespedia.com%2fImagenes%2fflores-bonitas-girasoles.jpg&ehk=Uoj8qSOoWr38NnXnpXR6yV%2bqd5zAoPKfdBNJQlJ7DZo%3d&risl=&pid=ImgRaw&r=0" width="150" height="100">
+    </a>
+
+    <a href="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" target="_blank">
+        <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" width="150" height="100">
+    </a>
+
+</div>
+<br>
+<hr>
+<br>
+
+</body>
+</html>
